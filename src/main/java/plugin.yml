@@ -1,0 +1,7 @@
+main: com.Acrobot.AutomaticShutdown.AutomaticShutdown
+
+name: AutomaticShutdown
+version: ${project.version}
+description: Plugin that automatically shuts down the server at 12AM and 12PM
+
+author: Acrobot
