@@ -5,3 +5,8 @@ version: ${project.version}
 description: Plugin that automatically shuts down the server at 12AM and 12PM
 
 author: Acrobot
+
+commands:
+  safe-stop:
+    description: Safely shuts down the server
+    permission: safe.stop

@@ -17,6 +17,9 @@ public class AutomaticShutdown extends JavaPlugin {
         Timer timer = new Timer();
         plugin = this;
 
+        getServer().getPluginManager().registerEvents(new Command(), this);
+        getCommand("safe-stop").setExecutor(new Command());
+
         timer.schedule(new ShutdownTask(), getNextRestartTime());
         getLogger().info("Scheduled restart on " + getNextRestartTime().toString());
     }
